@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Netflix Movie page clone</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="img/logo (1).png" alt=""></a>
+        <ul class="navigation">
+            <li><a href="">Home</a></li>
+            <li><a href="">TV Show</a></li>
+            <li><a href="">Movie</a></li>
+            <li><a href="">Latest</a></li>
+            <li><a href="">My list</a></li>
+        </ul>
+        <div class="search">
+            <input type="text" placeholder="Search">
+            <i class="fa fa-search"></i>
+        </div>
+    </header>
+    <div class="banner">
+        <img src="img/bg.jpg" class="bg" alt="">
+        <div class="content">
+            <img src="img/name.png" alt="" class="movietile">
+            <h4>
+                <span>2020</span>
+                <span>12+</span>
+                <span>1h 55min</span>
+                <span>Action</span>
+            </h4>
+            <p>Jujutsu Kaisen is a Japanese manga series written and illustrated by Gege Akutami, serialized in Shueisha's Weekly Shōnen Jump since March 2018. The Jujutsu Kaisen chapters are collected and published by Shueisha, with seventeen tankōbon volumes released as of October 2021
+            </p>
+            <div class="button">
+                <a href="#"><i class="fa fa-play" aria-hidden="true"></i>Play</a>
+                <a href="#"><i class="fa fa-plus" aria-hidden="true"></i>My list</a>
+            </div>
+        </div>
+        <a href="" onclick="togglevideo();" class="play"><img src="img/play.png" alt="">Watch trailer</a>
+    </div>
+    <div class="trailer">
+        <video src="https://youtu.be/dQw4w9WgXcQ" controls="true" autoplay="true"></video>
+        <img src="img/close (1).png"  class= "close" alt="">
+    </div>
+<script>
+    function togglevideo(){
+        const trailer =document.querySelector('.trailer');
+        trailer.classList.toggle('active')
+    }
+</script>
+</body>
+</html>
